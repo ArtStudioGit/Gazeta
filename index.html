@@ -6,19 +6,36 @@
 
 <style>
 
-@media (max-width:1280px)  {
+@media (max-width:1280px) {
+
+header {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 200px;
+gap: 25px;
+background-color: rgb(64, 139, 255);
+}
 
 .hat-button {
 border-radius: 6px;
-font-size: 14px;
+font-size: 24px;
 padding: 20px;
+margin: 5px;
+}
+
+.articles {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(1, 400px);
+grid-auto-rows: 400px;
+grid-auto-flow: row;
 }
 
 .article {
 grid-column: span 3;
 border-radius: 3px;
-font-size: 38px;
-padding: 40px;
+font-size: 48px;
 font-weight: bold;
 margin: 20px;
 transition: all 0.3s ease;
@@ -28,13 +45,22 @@ background-size: cover;
 
 .article:active {
 border-radius: 10px;
-font-size: 32px;
+font-size: 42px;
 transform: scale(0.9);
 }
 
 }
 
 @media (min-width:1281px) {
+
+header {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 120px;
+gap: 25px;
+background-color: rgb(64, 139, 255);
+}
 
 .hat-button {
 border-radius: 10px;
@@ -48,11 +74,19 @@ background-color: rgb(64, 139, 255);
 color: white;
 }
 
+.articles {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(1, 300px);
+grid-auto-rows: 300px;
+grid-auto-columns: auto;
+grid-auto-flow: row;
+}
+
 .article {
 grid-column: span 1;
 border-radius: 3px;
 font-size: 25px;
-padding: 40px;
 font-weight: bold;
 margin: 20px;
 transition: all 0.3s ease;
@@ -82,16 +116,11 @@ header {
 display: flex;
 justify-content: center;
 align-items: center;
-height: 120px;
-gap: 25px;
 background-color: rgb(64, 139, 255);
 }
 
 .articles {
 display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 200px 200px;
-grid-auto-rows: 200px;
 grid-auto-flow: row;
 }
 
@@ -112,6 +141,11 @@ transform: scale(0.9);
 
 .hat-logo {
 margin-left: 10px;
+transition: all 0.3s ease;
+}
+.hat-logo:hover {
+margin-left: 10px;
+transform: scale(1.1);
 }
 
 .hat-button {
@@ -146,17 +180,42 @@ color: white;
 
 <body>
 <div class="articles">
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
-<button class="article">Название статьи<br>бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
+<button class="article">Название статьи бла бла бла</button>
 </div>
 </body>
